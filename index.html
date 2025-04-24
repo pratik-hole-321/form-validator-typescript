@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Form Validator</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        input,
+        button {
+          display: block;
+          margin: 10px 0;
+          padding: 8px;
+          width: 100%;
+        }
+        .error {
+          color: red;
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Name" />
+      <div class="error" id="nameError"></div>
+
+      <input type="email" id="email" placeholder="Email" />
+      <div class="error" id="emailError"></div>
+
+      <input type="password" id="password" placeholder="Password" />
+      <div class="error" id="passwordError"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./dist/app.js"></script>
+  </body>
+</html>
